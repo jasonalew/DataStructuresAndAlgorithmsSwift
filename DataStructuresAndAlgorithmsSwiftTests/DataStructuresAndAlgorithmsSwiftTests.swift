@@ -35,8 +35,8 @@ class DataStructuresAndAlgorithmsSwiftTests: XCTestCase {
 //    }
 
     func testForPrime() {
-        XCTAssertTrue(JALPrime.isPrime(11), "Not Prime")
-        XCTAssertFalse(JALPrime.isPrime(110), "Prime")
+        XCTAssertTrue(JALPrime.isPrime(11), "Should be prime")
+        XCTAssertFalse(JALPrime.isPrime(110), "Is not prime")
     }
     
     func testBinarySearch() {
