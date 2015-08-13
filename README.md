@@ -1,2 +1,2 @@
 # DataStructuresAndAlgorithmsSwift
-CS practice with Swift
+CS and XCTest practice with Swift.
