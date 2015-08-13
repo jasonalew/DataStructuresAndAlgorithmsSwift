@@ -13,6 +13,10 @@
 		55734F741B7D23FD0065C092 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55734F731B7D23FD0065C092 /* Images.xcassets */; };
 		55734F771B7D23FD0065C092 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55734F751B7D23FD0065C092 /* LaunchScreen.xib */; };
 		55734F831B7D23FD0065C092 /* DataStructuresAndAlgorithmsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55734F821B7D23FD0065C092 /* DataStructuresAndAlgorithmsSwiftTests.swift */; };
+		55734F8D1B7D245D0065C092 /* JALPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55734F8C1B7D245D0065C092 /* JALPrime.swift */; };
+		55734F8E1B7D28530065C092 /* JALPrime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55734F8C1B7D245D0065C092 /* JALPrime.swift */; };
+		55734F901B7D2AA90065C092 /* JALBinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55734F8F1B7D2AA90065C092 /* JALBinarySearch.swift */; };
+		55734F911B7D2AA90065C092 /* JALBinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55734F8F1B7D2AA90065C092 /* JALBinarySearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 		55734F7C1B7D23FD0065C092 /* DataStructuresAndAlgorithmsSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataStructuresAndAlgorithmsSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55734F811B7D23FD0065C092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55734F821B7D23FD0065C092 /* DataStructuresAndAlgorithmsSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStructuresAndAlgorithmsSwiftTests.swift; sourceTree = "<group>"; };
+		55734F8C1B7D245D0065C092 /* JALPrime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JALPrime.swift; sourceTree = "<group>"; };
+		55734F8F1B7D2AA90065C092 /* JALBinarySearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JALBinarySearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,8 @@
 				55734F731B7D23FD0065C092 /* Images.xcassets */,
 				55734F751B7D23FD0065C092 /* LaunchScreen.xib */,
 				55734F6A1B7D23FD0065C092 /* Supporting Files */,
+				55734F8C1B7D245D0065C092 /* JALPrime.swift */,
+				55734F8F1B7D2AA90065C092 /* JALBinarySearch.swift */,
 			);
 			path = DataStructuresAndAlgorithmsSwift;
 			sourceTree = "<group>";
@@ -156,6 +164,7 @@
 		55734F5F1B7D23FD0065C092 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JAL;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Jason Lew";
 				TargetAttributes = {
@@ -213,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55734F6F1B7D23FD0065C092 /* ViewController.swift in Sources */,
+				55734F8D1B7D245D0065C092 /* JALPrime.swift in Sources */,
+				55734F901B7D2AA90065C092 /* JALBinarySearch.swift in Sources */,
 				55734F6D1B7D23FD0065C092 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				55734F831B7D23FD0065C092 /* DataStructuresAndAlgorithmsSwiftTests.swift in Sources */,
+				55734F911B7D2AA90065C092 /* JALBinarySearch.swift in Sources */,
+				55734F8E1B7D28530065C092 /* JALPrime.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
