@@ -49,6 +49,14 @@ class DataStructuresAndAlgorithmsSwiftTests: XCTestCase {
         
         XCTAssertEqual(orderedArray, orderedComparisonArray, "Arrays are not equal")
         
+        var intOrderedArray = [5, 9, 13, 56, 89]
+        let intOrderedComparisonArray = [5, 9, 11, 13, 56, 74, 89]
+        
+        JALBinarySearch.insertItem(11, sortedMutableArray: &intOrderedArray)
+        JALBinarySearch.insertItem(74, sortedMutableArray: &intOrderedArray)
+        
+        XCTAssertEqual(intOrderedArray, intOrderedComparisonArray, "Int arrays are not equal")
+        
         // Simulate starting with an empty array and keeping it sorted as
         // items are added.
         var unorderedIntArray = [22, 12, 56, 89, 7, 45, 67, 9, 288, 134, 33, 356]
