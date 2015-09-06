@@ -22,13 +22,9 @@ class JALBinarySearch: NSObject {
             
             if key == sortedArray[mid] {
                 return (true, mid)
-            }
-            
-            if key < sortedArray[mid] {
+            } else if key < sortedArray[mid] {
                 high = mid - 1
-            }
-            
-            if key > sortedArray[mid] {
+            } else {
                 low = mid + 1
             }
         }
