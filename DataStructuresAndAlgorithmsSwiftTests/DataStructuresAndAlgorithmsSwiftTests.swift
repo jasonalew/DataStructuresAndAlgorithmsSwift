@@ -39,7 +39,7 @@ class DataStructuresAndAlgorithmsSwiftTests: XCTestCase {
         XCTAssertFalse(JALPrime.isPrime(110), "Is not prime")
     }
     
-    func testBinarySearch() {
+    func testBinarySearchWithStrings() {
         // Insert items in a sorted array
         var orderedArray = ["apple", "bee", "cat", "zebra"]
         let orderedComparisonArray = ["apple", "bee", "cat", "dog", "mouse", "zebra"]
@@ -49,6 +49,12 @@ class DataStructuresAndAlgorithmsSwiftTests: XCTestCase {
         
         XCTAssertEqual(orderedArray, orderedComparisonArray, "Arrays are not equal")
         
+        // Just do a simple search
+        XCTAssertFalse(JALBinarySearch.findItem("fish", sortedArray: orderedArray), "Search did not return false")
+        XCTAssertTrue(JALBinarySearch.findItem("dog", sortedArray: orderedArray), "Search did not return true")
+    }
+    
+    func testBinarySearchWithNumbers() {
         var intOrderedArray = [5, 9, 13, 56, 89]
         let intOrderedComparisonArray = [5, 9, 11, 13, 56, 74, 89]
         
@@ -68,9 +74,5 @@ class DataStructuresAndAlgorithmsSwiftTests: XCTestCase {
         }
         
         XCTAssertEqual(newOrderedArray, orderedComparisonIntArray, "Arrays are not equal")
-        
-        // Just do a simple search
-        XCTAssertFalse(JALBinarySearch.findItem("fish", sortedArray: orderedArray), "Search did not return false")
-        XCTAssertTrue(JALBinarySearch.findItem("dog", sortedArray: orderedArray), "Search did not return true")
     }
 }
